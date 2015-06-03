@@ -14,7 +14,7 @@
 
     <PropertyGroup>
         <CodeAnalysisRules />
-        <CodeAnalysisRuleSet>$(SolutionDir)..\Common\Lsquared.ruleset</CodeAnalysisRuleSet>
+        <CodeAnalysisRuleSet>$(SolutionDir)Common\Lsquared.ruleset</CodeAnalysisRuleSet>
         <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
         <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
     </PropertyGroup>

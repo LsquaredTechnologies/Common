@@ -13,12 +13,12 @@
         <!--<IntermediatePath45>$(SolutionDir)obj\v4.5\$(Configuration)\</IntermediatePath45>-->
         <!--<DocOutputPath>$(SolutionDir)doc\</DocOutputPath>-->
         <!--<DropsRoot>$(SolutionDir)drops\$(TargetFrameworkVersion)\$(Configuration)\</DropsRoot>-->
-        <ToolsPath>$(SolutionDir)..\Tools\</ToolsPath>
+        <ToolsPath>$(SolutionDir)Common\Tools\</ToolsPath>
 
         <DelaySign>false</DelaySign>
         <SignAssembly>true</SignAssembly>
-        <PublicKeyFile Condition="'$(PublicKeyFile)' == ''">$(SolutionDir)..\Common\lsquared.pub</PublicKeyFile>
-        <AssemblyOriginatorKeyFile Condition="'$(AssemblyOriginatorKeyFile)' == ''">$(SolutionDir)..\Common\lsquared.snk</AssemblyOriginatorKeyFile>
+        <PublicKeyFile Condition="'$(PublicKeyFile)' == ''">$(SolutionDir)Common\lsquared.pub</PublicKeyFile>
+        <AssemblyOriginatorKeyFile Condition="'$(AssemblyOriginatorKeyFile)' == ''">$(SolutionDir)Common\lsquared.snk</AssemblyOriginatorKeyFile>
         <KeyPairContainer Condition="'$(KeyPairContainer)' == ''">Lsquared</KeyPairContainer>
         <PublicKeyToken>2daa677afb8d1813</PublicKeyToken>
 
