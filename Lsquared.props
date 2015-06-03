@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+    <PropertyGroup>
+        <ProductName>Lsquared</ProductName>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+        <DisableFastUpToDateCheck>false</DisableFastUpToDateCheck>
+        <OutputPath>$(SolutionDir)bin\$(TargetFrameworkVersion)\$(Configuration)\</OutputPath>
+        <IntermediatePath>$(SolutionDir)obj\$(TargetFrameworkVersion)\$(Configuration)\</IntermediatePath>
+        <BaseIntermediateOutputPath Condition=" '$(BaseIntermediateOutputPath)' == '' ">obj\$(TargetFrameworkVersion)\</BaseIntermediateOutputPath>
+        <!--<OutputPath45>$(SolutionDir)bin\v4.5\$(Configuration)\</OutputPath45>-->
+        <!--<IntermediatePath45>$(SolutionDir)obj\v4.5\$(Configuration)\</IntermediatePath45>-->
+        <!--<DocOutputPath>$(SolutionDir)doc\</DocOutputPath>-->
+        <!--<DropsRoot>$(SolutionDir)drops\$(TargetFrameworkVersion)\$(Configuration)\</DropsRoot>-->
+        <ToolsPath>$(SolutionDir)..\Tools\</ToolsPath>
+
+        <DelaySign>false</DelaySign>
+        <SignAssembly>true</SignAssembly>
+        <PublicKeyFile Condition="'$(PublicKeyFile)' == ''">$(SolutionDir)..\Common\lsquared.pub</PublicKeyFile>
+        <AssemblyOriginatorKeyFile Condition="'$(AssemblyOriginatorKeyFile)' == ''">$(SolutionDir)..\Common\lsquared.snk</AssemblyOriginatorKeyFile>
+        <KeyPairContainer Condition="'$(KeyPairContainer)' == ''">Lsquared</KeyPairContainer>
+        <PublicKeyToken>2daa677afb8d1813</PublicKeyToken>
+
+        <LangVersion>Default</LangVersion>
+        <!--<LangVersion Condition="">experimental</LangVersion>-->
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <ZipLevel>6</ZipLevel>
+        <Zip7ToolPath>$(ToolsPath)7-Zip.x86\</Zip7ToolPath>
+        <NuGetToolPath>$(ToolsPath)NuGet\</NuGetToolPath>
+        <ZipFormat Condition=" '$(ZipFormat)' == '' ">.7z</ZipFormat>
+    </PropertyGroup>
+
+</Project>

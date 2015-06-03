@@ -1,0 +1,17 @@
+extensions: designer.cs
+extensions: .cs
+// <copyright file="%FileName%" company="LSQUARED">
+// Copyright © 2008-%CreationYear%
+// </copyright>
+extensions: .aspx .ascx
+<%-- 
+<copyright file="%FileName%" company="LSQUARED">
+Copyright © 2008-%CreationYear%
+</copyright>
+--%>
+extensions: .xaml
+<!--
+<copyright file="%FileName%" company="LSQUARED">
+Copyright © 2008-%CreationYear%
+</copyright>
+-->
